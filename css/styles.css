@@ -13,18 +13,19 @@
 
 body {
 font-family: 'Roboto', sans-serif;
-background: #FFFFFF;
-color: #212121;
+background: var(--wht-text-color);
+color: var(--main-text-color);
 }
 
 :root {
---main-color: #212121;
+--main-text-color: #212121;
 --accent-color: #2196F3;
 --blk-text-color: #000000;
 --wht-text-color: #FFFFFF;
 --grey-text-color: #757575;
 --contacts-color: rgba(255, 255, 255, 0.6);
 --secondary-bgd: #2F303A;
+--secondary-section-bgd: #F5F4FA;
 } 
 
 /* Default */
@@ -36,48 +37,45 @@ a {
 }
 
 /* Studio-page */
-.logo-blk {
-  font-family: 'Raleway';
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: #000000;
-}
+.logo,
+.logo-blk,
 .logo-wht {
   font-family: 'Raleway';
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: #FFFFFF;
+}
+.logo-blk {
+  color: var(--blk-text-color);
+}
+.logo-wht {
+  color: var(--wht-text-color);
 }
 
-.logo-blk .logo-wht, .accent-color {
+.accent-color {
   color: var(--accent-color);
 }
-.nav-links {
+.link,
+.nav,
+.contact {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--main-color);
+} 
+.nav {
+  color: var(--main-text-color);
 }
-
-.nav-links:hover,
-.contact-link:hover {
-color: var(--accent-color);
-}
-.nav-links:focus,
-.contact-link:focus {
-  color: var(--accent-color);
-}
-.contact-link {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+.contact {
   color: var(--grey-text-color);
+}
+.current {
+  color: var(--accent-color);
+}
+.link:hover,
+.link:focus {
+  color: var(--accent-color);
 }
 .hero {
   background: var(--secondary-bgd);
@@ -98,19 +96,24 @@ color: var(--accent-color);
   letter-spacing: 0.06em;
   color: var(--wht-text-color);
   background-color: var(--accent-color);
-  cursor: pointer;  
+  cursor: pointer;
+  font-family: inherit;
+}
+.button:hover {
+background-color: #188CE8;
 }
 .section-title {
   font-size: 36px;
   line-height: 1.16;
   letter-spacing: 0.03em;
-  color: var(--main-color)
+  color: var(--main-text-color)
 }
 .feature-title {
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 14px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
-  color: var(--main-color)
+  color: var(--main-text-color);
+  text-transform: uppercase;
 }
 .feature-desc {
   font-size: 14px;
@@ -118,32 +121,45 @@ color: var(--accent-color);
   letter-spacing: 0.03em;
   color: var(--grey-text-color);
 }
-.team-member-name {
-  font-weight: 500;
+.team-bgr {
+  background: var(--secondary-section-bgd);
+}
+.team-item {
+  background-color: var(--wht-text-color);;
+}
+.team,
+.member-name,
+.position {
+  font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
   letter-spacing: 0.03em;
-  color:var(--main-color);
+}
+.team .member-name {
+  font-weight: 500;
+  color: var(--main-text-color);
 }
 .position {
-  font-size: 16px;
-  line-height: 1.18;  
-  letter-spacing: 0.03em;
   color: var(--grey-text-color);
 }
-.address-footer {
+
+.footer,
+.footer-address,
+.contact-link {
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  }
+.footer .footer-address {
   color: var(--wht-text-color);
   }
-.contact-link-footer {
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+
+.footer .contact-link {
   color: var(--contacts-color);
+}
+.contact-link:hover {
+color: var(--accent-color);
 }
 
 /* Portfolio-page */
@@ -153,9 +169,11 @@ color: var(--accent-color);
   line-height: 1.62x;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--main-color);
-  background: #F5F4FA;
+  color: var(--main-text-color);
+  background: var(--secondary-section-bgd);
   border-radius: 4px;
+  cursor: pointer;
+  font-family: inherit;
 }
 .button-filtr:hover {
   color: var(--wht-text-color);
@@ -169,7 +187,7 @@ color: var(--accent-color);
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: var(--main-color);
+  color: var(--main-text-color);
   }
 .link-desc {
   font-size: 16px;
