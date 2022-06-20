@@ -13,6 +13,8 @@
 
 body {
 font-family: 'Roboto', sans-serif;
+font-size: 14px;
+letter-spacing: 0.03em;
 background: var(--wht-text-color);
 color: var(--main-text-color);
 }
@@ -44,8 +46,7 @@ a {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
-  letter-spacing: 0.03em;
-}
+  }
 .logo-blk {
   color: var(--blk-text-color);
 }
@@ -60,7 +61,6 @@ a {
 .nav,
 .contact {
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 } 
@@ -105,20 +105,15 @@ background-color: #188CE8;
 .section-title {
   font-size: 36px;
   line-height: 1.16;
-  letter-spacing: 0.03em;
   color: var(--main-text-color)
 }
 .feature-title {
-  font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
   color: var(--main-text-color);
   text-transform: uppercase;
 }
 .feature-desc {
-  font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
   color: var(--grey-text-color);
 }
 .team-bgr {
@@ -133,7 +128,6 @@ background-color: #188CE8;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
-  letter-spacing: 0.03em;
 }
 .team .member-name {
   font-weight: 500;
@@ -147,10 +141,8 @@ background-color: #188CE8;
 .footer-address,
 .contact-link {
   font-style: normal;
-  font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
-  }
+}
 .footer .footer-address {
   color: var(--wht-text-color);
   }
@@ -192,6 +184,5 @@ color: var(--accent-color);
 .link-desc {
   font-size: 16px;
   line-height: 1.88;
-  letter-spacing: 0.03em;
   color: var(--grey-text-color);
 }
